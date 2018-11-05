@@ -1,0 +1,30 @@
+body {
+    font-size: 1.2em;
+    margin: 0px;
+    text-align: center;
+}
+
+h1, h4 {
+    font-family: cursive;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+
+nav a {
+    padding: 10px;
+    color: rgb(2, 2, 2);
+}
+
+footer {
+    font-family: cursive;
+    margin-top: 60px;
+}
+
+header a {
+    font-family: 'Courier New', Courier, monospace;
+}

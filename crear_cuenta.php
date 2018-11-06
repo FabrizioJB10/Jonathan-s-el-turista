@@ -1,8 +1,8 @@
 <?php
 
-$db = new PDO('mysql:host=localhost;dbname=crear_cuenta;charset=utf8','root','');
+$db = new PDO('mysql:host=localhost;dbname=ELTURISTA;charset=utf8','root','');
 
-$sentencia = $db->query("SELECT * FROM registrarse");
+$sentencia = $db->query("SELECT * FROM crear_cuenta");
 
 $usuario = $sentencia->fetchALL();
 
@@ -24,31 +24,25 @@ $usuario = $sentencia->fetchALL();
 
     <h2>CREAR CUENTA *>*</h2>
 
-    <?php
-   
-    foreach ($usuario as $u) { ?> 
+      <form action="procesar_cuenta.php" method="post">
 
-    <table>
-        <td>
-            <th>Nombres</th>
-            <th>Apellidos</th>
-            <th>Correo</th>
-            <th>Conteraseña</th>
-            <th>Confirmar Contraseña</th>
-        </td>
-        <td>
-        
-        </td>
-    </table>
-        <p>Nombres: <?php echo $u["nombres"]?></p>
-        <p>Apellidos: <?php echo $u["apellidos"]?></p>
-        <p>Correo: <?php echo $u["correo"]?></p>
-        <p>Contraseña: <?php echo $u["password"]?></p>
-        <p>Confirmar Contraseña: <?php echo $u["password"]?></p>
-        <br/>    
+        <div>
+            Nombres: <input type="text" name="Nombres">
+        </div>
+        <div>
+            Apellidos: <input type="text" name="Apellidos">
+        </div>
+       <div>
+           Correo: <input type="email" name="Correo" id="">
+       </div>
+       <div>
+           Contraseña: <input type="password" name="Contraseña" id="">
+       </div>
+       
+       <button type="submit">Enviar</button>
+   </form>
 
-    <?php } ?>
-    
+    <?php include 'footer.php' ?>
 
 </body>
 </html>

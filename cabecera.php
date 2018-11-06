@@ -8,7 +8,10 @@
         <a href="index.php"><strong>J. EL TURISTA</strong></a>
         <a href="login.php"><strong>Iniciar Sesión</strong></a>
         <a href="crear_cuenta.php"><strong>Crear Cuenta</strong></a>
-
+        <a href="lugares_exoticos.php"><strong>luagares exoticos</strong></a>
+        <a href="lugares_frecuencia_turismo.php"><strong>lugares turisticos con mas frecuencia</strong></a>
+        <a href="lugares_turisticos.php"><strong>lugares turisticos</strong></a>
+        <a href="sugerencias.php"><strong>sugerencias</strong></a>
         <?php if (isset($_SESSION["correo"])) { ?>
             <a href="crear_cuenta.php"><strong>Crear Cuenta</strong></a>
         <?php } ?>

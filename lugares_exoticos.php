@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>JONATHAN'S EL TURISTA</h1>
-
     <?php include 'cabecera.php' ?>
 
-    <h2>formulario paea crear  su ceinta en JONATHAN'S EL TURISTA</h2>
+    <h1>**LUGARES EXÓTICOS**</h1> 
 
-        <p>¡BIENVENID@!</p>
-        <p>UD. ah sido Registrado</p>
+
+
+
+
+
+    <?php include 'footer.php' ?>
 
 </body>
 </html>

@@ -38,7 +38,7 @@
     </div>
     <div class="caja">
         <h3>6.Las islas Ballestas en Paracas</h3>
-        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAcK84i.img?h=416&w=624&m=6&q=60&u=t&o=f&l=f" height="150">
+        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AAcK84i.img?h=416&w=624&m=6&q=60&u=t&o=f&l=f" height="270">
         <p>Las islas Ballestas es un grupo de islas cerca de la ciudad de Pisco, en el Perú, están compuestas por formaciones rocosas donde se encuentra una importante fauna marina con aves guaneras como el guanay, el piquero y el zarcillo principalmente, destacan islas Ballestas Norte, Centro y Sur cada una con una superficie.. estimada en 0,12 km².U.</p>
     </div>
     <div class="caja">

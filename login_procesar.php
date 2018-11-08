@@ -20,9 +20,7 @@ if(count($usuarios)==1){
     $_SESSION["correo"] = $u["correo"];
     $_SESSION["nombres"] = $u["nombres"];
     $_SESSION["apellidos"] = $u["apellidos"];
-
 }
-
 
 
 #Salida

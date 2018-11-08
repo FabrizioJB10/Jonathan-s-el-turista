@@ -1,6 +1,6 @@
 <?php
 
-$db = new PDO('mysql:host=localhost;dbname=ELTURISTA;charset=utf8','root','');
+$db = new PDO('mysql:host=localhost;dbname=elturista;charset=utf8','root','');
 
 $sentencia = $db->query("SELECT * FROM crear_cuenta");
 
@@ -23,24 +23,37 @@ $usuario = $sentencia->fetchALL();
     <?php include 'cabecera.php' ?>
 
     <h2>CREAR CUENTA *>*</h2>
-
-      <form action="procesar_cuenta.php" method="post">
-
+    <?php if(isset($_GET["error1"])) { ?>
+        <p style= "color:red ;">Confirme correctamente su contraseña.</p>
+    <?php } ?>
+    <form action="procesar_usuario.php" method="post">
         <div>
-            Nombres: <input type="text" name="Nombres">
+            Nombres:<input type="text" name="nombres">
         </div>
         <div>
-            Apellidos: <input type="text" name="Apellidos">
+            Apellidos:<input type="text" name="apellidos">
         </div>
-       <div>
-           Correo: <input type="email" name="Correo" id="">
-       </div>
-       <div>
-           Contraseña: <input type="password" name="Contraseña" id="">
-       </div>
-       
-       <button type="submit">Enviar</button>
-   </form>
+        <div>
+            Correo: <input type="email" name="correo">
+        </div>
+        <div>
+            Contraseña:<input type="password" name="password1">
+        </div>
+        <div>
+            Confirmar Contraseña: <input type="password" name="password2">
+        </div>
+        
+   
+        
+        <button type="submit">Registrarse</button>
+
+
+
+
+
+
+
+
 
     <?php include 'footer.php' ?>
 

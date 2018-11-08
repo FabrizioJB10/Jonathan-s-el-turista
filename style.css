@@ -28,3 +28,16 @@ footer {
 header a {
     font-family: 'Courier New', Courier, monospace;
 }
+
+img{
+    max width: 100%, 
+}
+
+.caja {
+    background-color: teal;
+    box-sizing:border-box;
+    display: inline-block;
+    margin: 0.5%;
+    padding:1em;
+    vertical-align:top;
+    width:31.9%

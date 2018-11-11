@@ -43,17 +43,18 @@ $usuario = $sentencia->fetchALL();
             Confirmar Contraseña: <input type="password" name="password2">
         </div>
         
-   
-        
         <button type="submit">Registrarse</button>
-
-
-
-
-
-
-
-
+        
+        # desde aquí
+        <?php
+        foreach ($crear_cuenta as $n) { ?>
+        <?php ?>
+         <h2><?php  echo $n["nombres"] ?></h2> 
+        <span><?php  echo $n["apellidos"] ?></span>
+        <p><?php  echo $n["correo"] ?></p>
+        <p><?php  echo $n["contraseña"] ?></p>
+        <p><?php  echo $n["confirmar"] ?></p>
+        <?php } ?>
 
     <?php include 'footer.php' ?>
 

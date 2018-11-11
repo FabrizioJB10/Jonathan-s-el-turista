@@ -44,7 +44,7 @@ $usuario = $sentencia->fetchALL();
         </div>
         
         <button type="submit">Registrarse</button>
-        
+    </form>
         # desde aquí
         <?php
         foreach ($crear_cuenta as $n) { ?>

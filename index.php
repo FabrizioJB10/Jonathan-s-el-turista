@@ -11,7 +11,7 @@
 <body>
     <?php include 'cabecera.php' ?>
     <h1 style="color: blue;">BIEVENID@ a: JONATHAN'S EL TURISTA!</h1>
-    <h4>Conoce los mejores lugares del Perú. <br/>
+    <h4>Conoce los mejores lugares del Perú. <br>
         ¡Con JONATHAN’s el turista, podrás viajar y compartir lugares nuevos a base de tu experiencia, con el mundo!</h4>    
     <?php include 'footer.php' ?>
 

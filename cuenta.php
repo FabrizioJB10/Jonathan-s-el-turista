@@ -8,7 +8,7 @@ $db = new PDO('mysql:host=localhost;dbname=elturista;charset=utf8mb4','root','')
 
 $sentencia= $db->query("SELECT * FROM crear_cuenta");
 
-$crear_cuenta = $sentencia->fetchAll();
+$cuenta = $sentencia->fetchAll();
 
 ?>
 
@@ -35,16 +35,15 @@ $crear_cuenta = $sentencia->fetchAll();
             <th>Contraseña</th>
             <th>Confirmar Contraseña</th>
          </tr>
-         <?php foreach ($crear_cuenta as $u) { ?>
+         <?php foreach ($crear_cuenta as $c) { ?>
          <tr>
-            <td><?php echo $u["nombres"] ?></td>
-            <td><?php echo $u["apellidos"] ?></td>
-            <td><?php echo $u["correo"] ?></td>
-            <td><?php echo $u["contraseña"] ?></td>
-            <td><?php echo $u["confirmar"] ?></td>
+            <td><?php echo $c["nombres"] ?></td>
+            <td><?php echo $c["apellidos"] ?></td>
+            <td><?php echo $c["correo"] ?></td>
+            <td><?php echo $c["contraseña"] ?></td>
             <td>
                 <form action="borrar_usuario.php" method="post">
-                    <input type="hidden" name="id" value="<?php echo $u["id"] ?>">
+                    <input type="hidden" name="id" value="<?php echo $c["id"] ?>">
                     <button type="submit">Borrar</button>
                 </form>
             </td>

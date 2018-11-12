@@ -3,18 +3,18 @@
 $a = $_POST["nombres"];
 $b = $_POST["apellidos"];
 $d = $_POST["correo"];
-$e = $_POST["contraseña"];
-$f = $_POST["confirmar"];
+$e = $_POST["password1"];
+$f = $_POST["password2"];
 #PROCESO
 $validacion = true;
 
-if($p1 != $p2){
+if($e != $f){
     $validacion = false;
     
 }
 else{
     $db = new PDO('mysql:host=localhost;dbname=elturista;charset=utf8mb4','root','');
-    $p1 = sha1($p1);
+    $e = sha1($e);
     $db->query("INSERT INTO usuarios VALUES (null, '$a', '$b', '$d', '$e', '$f')");
 }
 

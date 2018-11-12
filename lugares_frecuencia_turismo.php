@@ -13,7 +13,7 @@
     <h1>**LUGARES CON MÁS TURISMO**</h1>
     <div class="caja">
         <h3>1.RESERVA DE TAMBOPATA</h3>
-        <img src="https://cbctupay.com/wp-content/uploads/Tambopata.jpg" alt="TAMBOPATA" height="270">    
+        <img src="https://cbctupay.com/wp-content/uploads/Tambopata.jpg" alt="TAMBOPATA" >    
         <P>Se dice que los bosques amazónicos son el único lugar que dan la sensación de presenciar el amanecer
          de los tiempos. Miles de visitantes observan la diversidad de bosques y ríos del área al llegar a la
           ciudad de Puerto Maldonado, la capital del departamento de Madre de Dios, listos para embarcarse en un 
@@ -28,7 +28,7 @@
     </div>
     <div class="caja">
         <h3>3.TUMBES</h3>
-        <img src="http://viajeronline.com/wp-content/uploads/como-viajar-y-llegar-a-la-ciudad-de-tumbes-desde-lima-1.jpg" alt="TUMBES" height="270"> 
+        <img src="http://viajeronline.com/wp-content/uploads/como-viajar-y-llegar-a-la-ciudad-de-tumbes-desde-lima-1.jpg" alt="TUMBES"> 
         <P>Tumbes es una ciudad del extremo noroeste del Perú, capital provincial y del Departamento de Tumbes,
          situada cerca de la desembocadura del río Tumbes en el golfo de Guayaquil (océano Pacífico),
           a 30 km de la frontera con Ecuador. Cuenta con una población estimada de 111 595 habitantes para

@@ -4,7 +4,7 @@ $p = $_POST["password"];
 $validacion = false;
 $p = sha1($p);
 $db = new PDO('mysql:host=localhost;dbname=elturista;charset=utf8mb4','root','');
-$cc= $db->query("SELECT * FROM crear_cuenta WHERE correo='$c' AND contraseña='$p");
+$cc= $db->query("SELECT * FROM crear_cuenta WHERE correo='$c' AND contraseña='$p');
 $crear_cuenta = $cc->fetchAll();
 
 

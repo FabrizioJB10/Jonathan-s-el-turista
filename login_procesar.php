@@ -1,29 +1,20 @@
 <?php
-#Entrada
-
 $c = $_POST["correo"];
 $p = $_POST["password"];
-
-#Proceso
-
 $validacion = false;
 $p = sha1($p);
 $db = new PDO('mysql:host=localhost;dbname=elturista;charset=utf8mb4','root','');
-$stmt= $db->query("SELECT * FROM iniciar WHERE correo='$c' AND contraseña='$p'");
-$usuarios = $stmt->fetchAll();
+$cc= $db->query("SELECT * FROM crear_cuenta WHERE correo='$c' AND contraseña='$p");
+$crear_cuenta = $cc->fetchAll();
 
 
-if(count($usuarios)==1){
+if(count($crear_cuenta)==1){
     $validacion = true;
     session_start();
-    $u= $usuarios[0];
-    $_SESSION["correo"] = $u["correo"];
-    $_SESSION["nombres"] = $u["nombres"];
-    $_SESSION["apellidos"] = $u["apellidos"];
+    $cu= $crear_cuenta[0];
+    $_SESSION["correo"] = $cu["correo"];
+    #$_SESSION["password"] = $cu["password"];
 }
-
-
-#Salida
 
 if($validacion){
     header("Location: index.php");
@@ -31,7 +22,5 @@ if($validacion){
 else{
     header("Location: login.php?error=1");
 }
-
-
 
 ?>

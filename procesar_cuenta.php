@@ -1,11 +1,11 @@
 <?php
-#ENTRADA
+
 $a = $_POST["nombres"];
 $b = $_POST["apellidos"];
 $d = $_POST["correo"];
 $e = $_POST["password1"];
 $f = $_POST["password2"];
-#PROCESO
+
 $validacion = true;
 
 if($e != $f){
@@ -15,12 +15,8 @@ if($e != $f){
 else{
     $db = new PDO('mysql:host=localhost;dbname=elturista;charset=utf8mb4','root','');
     $e = sha1($e);
-    $db->query("INSERT INTO usuarios VALUES (null, '$a', '$b', '$d', '$e', '$f')");
+    $db->query("INSERT INTO crear_cuenta VALUES (null, '$a', '$b', '$d', '$e')");
 }
-
-
-#SALIDA
-
 
 
 if($validacion == false) {

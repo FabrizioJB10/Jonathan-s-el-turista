@@ -33,21 +33,14 @@ $cuenta = $sentencia->fetchAll();
             <th>Apellidos</th>
             <th>Correo</th>
             <th>Contraseña</th>
-            <th>Confirmar Contraseña</th>
          </tr>
-         <?php foreach ($crear_cuenta as $c) { ?>
+         <?php foreach ($crear_cuenta as $cu) { ?>
          <tr>
-            <td><?php echo $c["nombres"] ?></td>
-            <td><?php echo $c["apellidos"] ?></td>
-            <td><?php echo $c["correo"] ?></td>
-            <td><?php echo $c["contraseña"] ?></td>
-            <td>
-                <form action="borrar_usuario.php" method="post">
-                    <input type="hidden" name="id" value="<?php echo $c["id"] ?>">
-                    <button type="submit">Borrar</button>
-                </form>
-            </td>
-            </tr>
+            <td><?php echo $cu["nombres"] ?></td>
+            <td><?php echo $cu["apellidos"] ?></td>
+            <td><?php echo $cu["correo"] ?></td>
+            <td><?php echo $cu["contraseña"] ?></td>
+        </tr>
             <?php } ?>
             <?php if(count($crear_cuenta)==0) { ?>
             <tr>

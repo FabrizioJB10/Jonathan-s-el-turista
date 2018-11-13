@@ -12,6 +12,7 @@
         <a href="lugares_frecuencia_turismo.php"><strong>Lugares Turísticos con mas frecuencia</strong></a>
         <a href="lugares_turisticos.php"><strong>Lugares turísticos</strong></a>
         <a href="sugerencias.php"><strong>Sugerencias</strong></a>
+        <a href="registrar_sugerencias.php"><strong>Realizar Sugerencias</strong></a>
         <?php if (isset($_SESSION["correo"])) { ?>
             <a href="crear_cuenta.php"><strong>Crear Cuenta</strong></a>
         <?php } ?>

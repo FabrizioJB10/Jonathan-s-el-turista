@@ -1,13 +1,10 @@
 <?php
-#PASO 1: LA CONEXION
+
 $db = new PDO ( 'mysql:host=localhost;dbname=elturista;charset=utf8mb4','root','');
 
-#PASO 2: LASENTENCIA
-$sentencia = $db->query("SELECT * FROM sugerencia");
+$sentencias = $db->query("SELECT * FROM sugerencias");
 
-#PASO 3: OBTER LOS DATOS
-$sugerencia = $sentencia->fetchAll();
-
+$sugerencias = $sentencias->fetchAll();
 ?>
 
 <!DOCTYPE html>
@@ -23,18 +20,19 @@ $sugerencia = $sentencia->fetchAll();
 <body>
    <?php include 'cabecera.php' ?>
 
-    <p>Sugerencias:</p>
+    <h1>**Sugerencias:**</h1>
 
     <?php
-    #PASO 4: IMPRIMIR LOS DATOS
 
-    foreach ($noticias as $n) {?>
+        foreach ($sugerencias as $su) {?>
     
-    <h2><?php echo $n["nombre"]?></h2>
-    <span><?php echo $n["ubicacion"]?></span>
-    <p><?php echo $n["descripcion"]?></p>
+        <h2><?php echo $su["nombre"]?></h2>
+        <h2><?php echo $su["ubicacion"]?></h2>
+        <p><?php echo $su["descripcion"]?></p>
 
     <?php } ?>
+
+    <?php include 'footer.php' ?>
 
 </body>
 </html>

@@ -4,7 +4,7 @@ $db = new PDO('mysql:host=localhost;dbname=elturista;charset=utf8','root','');
 
 $sentencia = $db->query("SELECT * FROM crear_cuenta");
 
-$usuario = $sentencia->fetchALL();
+$crear_cuenta = $sentencia->fetchALL();
 
 ?>
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ $usuario = $sentencia->fetchALL();
     <?php if(isset($_GET["error1"])) { ?>
         <p style= "color:red ;">Confirme correctamente su contraseña.</p>
     <?php } ?>
-    <form action="procesar_usuario.php" method="post">
+    <form action="procesar_cuenta.php" method="post">
         <div>
             Nombres:<input type="text" name="nombres">
         </div>

@@ -81,9 +81,6 @@ Declaradas Patrimonio de la Humanidad por la UNESCO</p>
         <p>Capital de Perú, reconocida en el 2013 con el premio Travellers’ Choice como mejor destino emergente, una ciudad que cautiva con su mezcla de modernidad e historia, en donde barrios de vibrante actividad y vida nocturna como Miraflores y San Isidro, se cruzan con las antiguas arquitecturas coloniales del Centro Histórico declarado Patrimonio de la Humanidad por la UNESCO.</p>
     </div>
 
-
-
-
     <?php include 'footer.php' ?>
 
 </body>
@@ -92,9 +89,6 @@ Declaradas Patrimonio de la Humanidad por la UNESCO</p>
         <img src="https://enviajes.cl/wp-content/uploads/2013/10/Lugares-turisticos-de-Peru-Lima.jpg" alt="LIMA-Plaza de Armas de Lima" height="270">
         <p>Capital de Perú, reconocida en el 2013 con el premio Travellers’ Choice como mejor destino emergente, una ciudad que cautiva con su mezcla de modernidad e historia, en donde barrios de vibrante actividad y vida nocturna como Miraflores y San Isidro, se cruzan con las antiguas arquitecturas coloniales del Centro Histórico declarado Patrimonio de la Humanidad por la UNESCO.</p>
     </div>
-
-
-
 
     <?php include 'footer.php' ?>
 
